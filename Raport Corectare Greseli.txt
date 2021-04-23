@@ -1,0 +1,9 @@
+Corectare a greserilor din programul dat:
+
+	Interface Segregation Principle 
+ - principiul e incalcat de pachetul staff si clasele din el, pentru ca bucatarul este nevoit sa implementeze metoda pentru servit si curatat masa, desi el nu poate sa faca asta
+ - de asemenea waiter e nevoit sa implementeze metoda pentru gatit, desi nu poate sa gateasca
+
+	Single Responsibility Principle
+ - principiul este incalcat de clasa POS, care pe langa afisarea bonului,
+verifica disponibilitatea si pretul produsului primit ca parametru folosind o concatenare de mai multe instructiuni decizionale if-else, o rezolvare ar fi implementarea unui atribut price pentru fiecare din clasele pizza care sa fie folosit pentru calcularea pretului
